@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Proto.NodeJs", "Proto.NodeJs\Proto.NodeJs.njsproj", "{3F9609BE-DAD6-4109-BF9C-D980889D86FF}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "TodoList", "TodoList\TodoList.njsproj", "{BCB25048-BD25-4FE8-8EA7-15ED8842C62F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F9609BE-DAD6-4109-BF9C-D980889D86FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F9609BE-DAD6-4109-BF9C-D980889D86FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F9609BE-DAD6-4109-BF9C-D980889D86FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F9609BE-DAD6-4109-BF9C-D980889D86FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCB25048-BD25-4FE8-8EA7-15ED8842C62F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCB25048-BD25-4FE8-8EA7-15ED8842C62F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCB25048-BD25-4FE8-8EA7-15ED8842C62F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCB25048-BD25-4FE8-8EA7-15ED8842C62F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

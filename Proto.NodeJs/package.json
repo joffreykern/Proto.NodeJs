@@ -1,0 +1,14 @@
+{
+  "name": "Proto.NodeJs",
+  "version": "0.0.0",
+  "description": "Proto.NodeJs",
+  "main": "server.js",
+  "author": {
+    "name": "kernjof",
+    "email": ""
+  },
+  "dependencies": {
+    "express": "~3.4.4",
+    "ejs": "~0.8.5"
+  }
+}

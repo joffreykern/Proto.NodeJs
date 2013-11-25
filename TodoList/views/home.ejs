@@ -1,0 +1,9 @@
+﻿<ul>
+<% for(var i = 0; i <= todoes.length - 1; i++) { %>
+	<li><%= todoes[i] %></li>
+<% } %>
+</ul>
+<form method='post' action='/todo'>
+	<input id="newtodo" name="newtodo" type="text" />
+	<input type='submit'/>
+</form>
