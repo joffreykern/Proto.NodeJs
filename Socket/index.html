@@ -1,0 +1,38 @@
+﻿<html>
+<head>
+    <title>Communication with Socket.IO</title> 
+</head>
+<body>
+    <h1>Hello :)</h1>
+    <input type="text" id="message" />
+    <input type="button" id="send" value="Send message" accesskey="enter" />
+    <div id="chat">
+    </div>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="./socket.io/socket.io.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var socket = io.connect('http://192.168.172.20:1337');
+        var pseudo = prompt('Quel est votre pseudo ?');
+
+        socket.emit('new_user', pseudo);
+
+        socket.on('message_chat', function (data) {
+            insertMessage(data.message, data.username);
+        });
+
+        socket.on('new_user', function (username) {
+            $("#chat").prepend(username + " has join the chat !");
+        });
+
+        $("#send").click(function (e, n) {
+            socket.emit('message', $('#message').val());
+            insertMessage($('#message').val(), pseudo);
+            $('#message').val("");
+        });
+
+        function insertMessage(message, username) {
+            $("#chat").prepend("<p>" + username + " says : " + message + "</p>");
+        }
+    </script>
+</body>
+</html>
